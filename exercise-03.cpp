@@ -44,6 +44,7 @@ int cariGaji(int gol)
             return 8000000;
 
         default:
+            return 0;
             break;
     }
 }
@@ -62,7 +63,7 @@ void cetakDaftar(data pegawai, int n){
     }
     
 }
-void rataGaji(int rata, int n){
+void rataGaji(int rata, int n, data pegawai){
     rata = 0;
     for(int i = 0; i < n; i++)
     {
@@ -86,5 +87,5 @@ int main(){
 
     inputPegawai(pegawai, n);
     cetakDaftar(pegawai, n);
-    rataGaji(rata, n);
+    rataGaji(rata, n, pegawai);
 }
